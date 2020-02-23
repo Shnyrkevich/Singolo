@@ -57,11 +57,19 @@
     line-height: 6px;
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
     letter-spacing: -0.02em;
 }
 
-.navigation .navigation_dot {
+.navigation_link {
+    color: #fff;
+}
+
+.navigation_link:hover{
+    color: #f06c64;
+    cursor: pointer;
+}
+
+.navigation_dot {
     color: #494e62;
 }
 
@@ -80,6 +88,11 @@
 
 .slider-block__arrow {
     display: inline-block;
+}
+
+.slider-block__arrow:hover {
+   cursor: pointer;
+   opacity: 0.8;
 }
 
 .arrow_left {
