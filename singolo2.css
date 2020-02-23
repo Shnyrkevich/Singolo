@@ -1,0 +1,21 @@
+
+
+* {
+    margin: 0;
+}
+
+.portfolio {
+    margin: 0;
+    width: 1020px;
+    height: 864px;
+    background-color: #2d2f39;
+    border-bottom: 6px solid #313745;
+}
+
+.about {
+    margin: 0;
+    width: 1020px;
+    height: 728px;
+    background-color: #f1f1f1;
+    border-bottom: 6px solid #ffffff;
+}
