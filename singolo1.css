@@ -1,0 +1,211 @@
+@import "fontLato.css";
+
+* {
+    margin: 0;
+}
+
+.header {
+    margin: 0;
+    width: 1020px;
+    height: 89px;
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+}
+
+.wrapper {
+    width: 940px;
+    margin: 0 40px 0 40px;
+}
+
+.header .wrapper {
+    display: flex;
+}
+
+.logo {
+    display: inline;
+    margin: 30px 0 34px 0;
+    font-family: 'Lato-Light', Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: -0.063em;
+}
+
+.logo h1 {
+    font-size: 25px;
+    width: 560px;
+}
+
+.logo span {
+    color: #c9605c;
+}
+
+.header nav {
+    margin: 40px 0 36px 10px;
+}
+
+.navigation {
+    padding: 0;
+    width: 380px;
+    height: 9px;
+}
+
+.navigation .navigation__element {
+    display: inline;
+    margin: 0 8px 0 0;
+    font-family: 'Lato-Regular', Arial, sans-serif;
+    line-height: 6px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.navigation .navigation_dot {
+    color: #494e62;
+}
+
+.slider-block {
+    display: flex;
+    width: 1020px;
+    height: 594px;
+    background-color: #f06c64;
+    border-bottom: 6px solid #ea676b;
+}
+
+.slider-block .wrapper {
+    margin: 0 40px 0 40px;
+    width: 940px;
+}
+
+.slider-block__arrow {
+    display: inline-block;
+}
+
+.arrow_left {
+    margin: 260px 0 286px 2px;
+}
+
+.arrow_right {
+    margin: 280px 0 286px 43px;
+}
+
+.phone-vertical {
+    display: inline-block;
+    margin: 49px 70px 58px 49px;
+    height: 483px;
+    width: 240px;
+}
+
+.phone__shadow-verticaly{
+    position: absolute;
+    z-index: 1;
+}
+
+.phone__body-verticaly {
+    position: absolute;
+    z-index: 2;
+}
+
+.phone__picture-verticaly {
+    position: absolute;
+    z-index: 3;
+    top: 78px;
+    left: 112px;
+}
+
+.phone-horizontal {
+    display: inline-block;
+    margin: 174px 9px 180px 0;
+    width: 483px;
+    height: 240px;
+}
+
+.phone__shadow-horizontaly{
+    position: absolute;
+    z-index: 1;
+    
+}
+
+.phone__body-horizontaly {
+    position: absolute;
+    z-index: 2;
+}
+
+.phone__picture-horizontaly {
+    position: absolute;
+    z-index: 3;
+    top: 164px;
+    left: 360px;
+    bottom: 451px;
+
+}
+
+.services {
+    font-family: 'Lato-Bold', Arial, sans-serif;
+    width: 1020px;
+    height: 494px;
+    background-color: #f2f2f2;
+    border-bottom: 6px solid #fff;
+}
+
+.services__our {
+    padding: 61px 0 0 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #666d89;
+    letter-spacing: -0.04em;
+}
+
+.services__description {
+    font-family: 'Lato', Arial, sans-serif;
+    margin: 18px 0 59px 0;
+    height: 47px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #767e9e;
+    letter-spacing: -0.03em;
+}
+
+.services-list {
+    display: inline-flex;
+    flex-direction: row;
+    height: 122px;
+    width: 940px;
+}
+
+.services-component {
+    display: flex;
+    margin: 0 20px 0 0;
+    width: 300px;
+}
+
+.services__ico {
+    margin: 0 21px 0 0;
+}
+
+.services_name {
+    font-family: 'Lato-Bold', Arial, sans-serif;
+    padding: 0 0 9px 0; 
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 550;
+    color: #666d89;
+    letter-spacing: -0.8px;
+}
+
+.services_text {
+    font-family: 'Lato', sans-serif;
+    width: 220px;
+    height: 54px;
+    font-size: 12px;
+    line-height: 22px;
+    font-weight: 300;
+    text-align: justify;
+    color: #767e9e;
+    
+}
+
+
+
