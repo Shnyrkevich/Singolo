@@ -14,26 +14,26 @@
 
 .portfolio .wrapper{
     margin: 0 40px 0 40px;
-    padding: 68px 0 67px 0;
+    padding: 69px 0 67px 0;
 }
 
 .title {
-    margin: 0 1px 33px 0;
-    font-family: 'Lato', sans-serif;
+    margin: 0 0 33px 0;
+    font-family: "Lato", sans-serif;
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
     font-weight: 900;
-    letter-spacing: -0.098em;
+    letter-spacing: -0.07em;
 }
 
 .description {
-    margin: 0 1px 15px 0;
-    font-family: 'Lato', sans-serif;
+    margin-bottom: 14px;
+    font-family: "Lato", sans-serif;
     font-size: 18px;
     color: #767e9e;
     font-weight: 300;
-    letter-spacing: -0.03em;
+    letter-spacing: -0.01em;
 }
 
 .portfolio__buttons {
@@ -55,6 +55,17 @@
     color: #767e9e;
 }
 
+.portfolio__buttons_button:hover {
+    cursor: pointer;
+    border-color: #c5c5c5;
+    color: #c5c5c5
+}
+
+.portfolio__buttons_button:hover {
+    border-color: #c5c5c5;
+    color: #c5c5c5
+}
+
 .portfolio__buttons_button.button_all{
     width: 29px;
 }
@@ -74,10 +85,11 @@
 .portfolio__images {
     display: flexbox;
     width: 960px;
+    max-height: 604px;
 }
 
 .portfolio__images_image {
-   margin: 10px 16px 10px 0;
+   margin: 10px 16px 6px 0;
 }
 
 .about {
@@ -94,11 +106,11 @@
 }
 
 .title__about {
-    margin: 0 0 28px 0;
+    margin-bottom: 28px;
 }
 
 .description__about {
-    margin: 0 1px 53px 0;
+    margin: 0 1px 47px 0;
     height: 57px;
     line-height: 30px;
     letter-spacing: -0.035em;
@@ -109,22 +121,23 @@
 }
 
 .person-creator{
-    margin: 0 20px 0 0;
+    margin-right: 20px;
     width: 300px;
     height: 443px;
 }
 
 .person-creator__name {
-    margin: 7px 0 8px -1px;
-    font-family: "Lato-Regular", sans-serif;
+    margin: 13px 0 10px -1px;
+    font-family: "Lato", sans-serif;
     font-size: 18px;
-    font-weight: 775;
+    line-height: 18px;
+    font-weight: 900;
     color: #666d89;
-    letter-spacing: -0.05em;
+    letter-spacing: -0.09em;
 }
 
 .person-creator__description{
-    margin: 0 0 21px 0;
+    margin: 0 0 23px 0;
     font-family: "Lato", sans-serif;
     font-size: 12px;
     line-height: 21.5px;
@@ -135,5 +148,12 @@
 }
 
 .links a{
-    margin: 0 3.5px 0 0;
+    margin: 0 3px 0 0;
 }
+
+.links a:hover{
+    cursor: pointer;
+    filter: hue-rotate(145deg);
+}
+
+
