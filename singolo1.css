@@ -27,7 +27,7 @@
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     color: #fff;
-    font-weight: 700;
+    font-weight: 900;
     letter-spacing: -0.063em;
 }
 
@@ -52,8 +52,8 @@
 
 .navigation .navigation__element {
     display: inline;
-    margin: 0 8px 0 0;
-    font-family: 'Lato-Regular', Arial, sans-serif;
+    margin-right: 8px;
+    font-family: 'Lato', sans-serif;
     line-height: 6px;
     font-size: 12px;
     font-weight: 700;
@@ -88,11 +88,12 @@
 
 .slider-block__arrow {
     display: inline-block;
+    outline: none;
 }
 
 .slider-block__arrow:hover {
    cursor: pointer;
-   opacity: 0.8;
+   filter: contrast(120%) drop-shadow(0px 5px 10px  #494e62);
 }
 
 .arrow_left {
@@ -151,11 +152,10 @@
     top: 164px;
     left: 360px;
     bottom: 451px;
-
 }
 
 .services {
-    font-family: 'Lato-Bold', Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     width: 1020px;
     height: 494px;
     background-color: #f2f2f2;
@@ -163,20 +163,21 @@
 }
 
 .services__our {
-    padding: 61px 0 0 0;
+    padding-top: 61px;
     font-size: 30px;
     font-weight: 700;
     color: #666d89;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
 }
 
 .services__description {
     font-family: 'Lato', Arial, sans-serif;
-    margin: 18px 0 59px 0;
+    margin: 19px 0 58px 0;
     height: 47px;
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
+    text-align: justify;
     color: #767e9e;
     letter-spacing: -0.03em;
 }
@@ -190,22 +191,22 @@
 
 .services-component {
     display: flex;
-    margin: 0 20px 0 0;
+    margin-right: 20px;
     width: 300px;
 }
 
 .services__ico {
-    margin: 0 21px 0 0;
+    margin: 1px 20px 0 1px;
 }
 
 .services_name {
-    font-family: 'Lato-Bold', Arial, sans-serif;
+    font-family: 'Lato', sans-serif;
     padding: 0 0 9px 0; 
     font-size: 18px;
     line-height: 18px;
-    font-weight: 550;
+    font-weight: 700;
     color: #666d89;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.03em;
 }
 
 .services_text {
@@ -213,12 +214,10 @@
     width: 220px;
     height: 54px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21.65px;
     font-weight: 300;
     text-align: justify;
-    color: #767e9e;
-    
+    color: #767e9e;  
+    letter-spacing: -0.02em;
 }
-
-
 
