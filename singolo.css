@@ -1,4 +1,4 @@
-@import "fontLato.css";
+@import "./fontLato.css";
 
 * {
     margin: 0;
@@ -303,7 +303,7 @@
 }
 
 .portfolio__images_image {
-   margin: 10px 16px 7px 0;
+   margin: 10px 16px 6px 0;
 }
 
 .about {
