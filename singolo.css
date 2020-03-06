@@ -450,6 +450,23 @@
     display: flex;
 }
 
+.input-form__submit {
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #d6564f;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #f0d8d9;
+    font-size: 18px;
+    outline: none;
+}
+
+.input-form__submit:hover{
+    background-color: #f0d8d9;
+    color: #d6564f;
+}
+
 .contact-information__title{
     margin-bottom: 10px;
     font-family: "Lato", sans-serif;
