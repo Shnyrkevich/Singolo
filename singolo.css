@@ -534,9 +534,10 @@
 }
 
 .singolo-footer .links {
-    margin: 21px 0 0 26px;
+    width: 157px;
+    margin: 21px 0 0 30px;
 }
 
-.links .links--last {
+/*.links .links--last {
     margin-right: -1px;
-}
+}*/
