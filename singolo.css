@@ -499,11 +499,11 @@
 
 .contact-list__element p {
     margin-bottom: 0;
-    line-height: 21px;
+    line-height: 22px;
 }
 
 .contact-list__element--navigation {
-    margin: 4px 13px 0 3px;
+    margin: 5px 13px 0 3px;
 }
 
 .contact-list__element--phone {
@@ -511,7 +511,7 @@
 }
 
 .contact-list__element--mail {
-    margin: 8px 10px 0 0;
+    margin: 7px 10px 0 0;
 }
 
 .singolo-footer {
