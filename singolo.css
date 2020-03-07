@@ -477,7 +477,7 @@
 }
 
 .contact-information__title{
-    margin: -1px 0 10px 0;
+    margin-bottom: 10px;
     font-family: "Lato", sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -487,7 +487,7 @@
 }
 
 .contact-information-text {
-    margin-bottom: 22px;
+    margin-bottom: 21px;
     font-family: "Lato", sans-serif;
     text-align: justify;
     font-size: 12px;
@@ -499,10 +499,11 @@
 
 .contact-list__element p {
     margin-bottom: 0;
+    line-height: 21px;
 }
 
 .contact-list__element--navigation {
-    margin: 5px 13px 0 3px;
+    margin: 4px 13px 0 3px;
 }
 
 .contact-list__element--phone {
@@ -510,7 +511,7 @@
 }
 
 .contact-list__element--mail {
-    margin: 7px 10px 0 0;
+    margin: 8px 10px 0 0;
 }
 
 .singolo-footer {
@@ -534,7 +535,8 @@
 }
 
 .singolo-footer .links {
-    margin: 21px 0 0 26px;
+    width: 157px;
+    margin: 21px 0 0 30px;
 }
 
 .links .links--last {
