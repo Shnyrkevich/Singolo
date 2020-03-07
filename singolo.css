@@ -28,7 +28,7 @@
     text-decoration: none;
     color: #fff;
     font-weight: 900;
-    letter-spacing: -0.063em;
+    letter-spacing: -0.08em;
 }
 
 .logo h1 {
@@ -41,7 +41,7 @@
 }
 
 .header nav {
-    margin: 40px 0 36px 10px;
+    margin: 39.5px 0 36px 9px;
 }
 
 .navigation {
@@ -62,6 +62,10 @@
 
 .navigation_link {
     color: #fff;
+}
+
+.navigation .navigation_link--last {
+    margin-right: 0;
 }
 
 .navigation_link:hover{
@@ -172,7 +176,7 @@
 
 .services__description {
     font-family: 'Lato', Arial, sans-serif;
-    margin: 19px 0 58px 0;
+    margin: 18px 0 58px 0;
     height: 47px;
     font-size: 18px;
     font-weight: 300;
@@ -185,23 +189,24 @@
 .services-list {
     display: inline-flex;
     flex-direction: row;
+    margin-bottom: 1px;
     height: 122px;
     width: 940px;
 }
 
 .services-component {
     display: flex;
-    margin-right: 20px;
+    margin-right: 21px;
     width: 300px;
 }
 
 .services__ico {
-    margin: 1px 20px 0 1px;
+    margin: 1px 20px 0 0;
 }
 
 .services_name {
     font-family: 'Lato', sans-serif;
-    padding: 0 0 9px 0; 
+    padding: 0 0 9px 1px; 
     font-size: 18px;
     line-height: 18px;
     font-weight: 700;
@@ -320,7 +325,7 @@
 }
 
 .title__about {
-    margin-bottom: 29px;
+    margin-bottom: 28px;
 }
 
 .description__about {
@@ -337,12 +342,13 @@
 
 .person-creator{
     margin-right: 20px;
+    margin-left: 0px;
     width: 300px;
     height: 443px;
 }
 
 .person-creator__name {
-    margin: 13.5px 0 10px -1px;
+    margin: 14px 0 10px -1px;
     font-family: "Lato", sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -356,14 +362,14 @@
     font-family: "Lato", sans-serif;
     text-align: justify;
     font-size: 12px;
-    line-height: 21px;
+    line-height: 21.5px;
     font-weight: 300;
     color: #767e9e;
     letter-spacing: -0.01em;
 }
 
 .links a{
-    margin: 0 3px 0 0;
+    margin-right: 3px;
 }
 
 .links a:hover{
@@ -444,6 +450,8 @@
 
 .input-form__input-text--textarea {
     padding-top: 12px;
+    margin-bottom: 14px;
+    resize: none;
 }
 
 .contact-list__element {
@@ -451,14 +459,15 @@
 }
 
 .input-form__submit {
-    height: 50px;
-    width: 100px;
+    height: 20px;
+    width: 60px;
+    text-align: center;
     border: none;
     background-color: #d6564f;
     border-radius: 5px;
     cursor: pointer;
     color: #f0d8d9;
-    font-size: 18px;
+    font-size: 12px;
     outline: none;
 }
 
@@ -468,7 +477,7 @@
 }
 
 .contact-information__title{
-    margin-bottom: 10px;
+    margin: -1px 0 10px 0;
     font-family: "Lato", sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -478,7 +487,7 @@
 }
 
 .contact-information-text {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     font-family: "Lato", sans-serif;
     text-align: justify;
     font-size: 12px;
@@ -501,7 +510,7 @@
 }
 
 .contact-list__element--mail {
-    margin: 7.5px 10px 0 0;
+    margin: 7px 10px 0 0;
 }
 
 .singolo-footer {
@@ -517,7 +526,7 @@
 .singolo-footer__text {
     font-family: "Lato", sans-serif;
     padding: 0;
-    margin: 31px 590px 0px 2px;
+    margin: 31px 560px 0px 2px;
     width: 200px;
     font-size: 12px;
     color: #5e657e;
@@ -525,8 +534,7 @@
 }
 
 .singolo-footer .links {
-    width: 156px;
-    margin-top: 21px;
+    margin: 21px 0 0 26px;
 }
 
 .links .links--last {
