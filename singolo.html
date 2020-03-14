@@ -7,42 +7,56 @@
     <link rel="stylesheet" href="./fontLato.css">
     <link rel="stylesheet" href="./singolo.css">
 </head>
+
 <body>
     <header class="header">
         <div class="wrapper">
-            <a href="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
+            <a id="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
             <nav>
                 <ul class="navigation">
-                    <li class="navigation__element navigation_link">HOME</li>
+                    <li class="navigation__element navigation_link" ><a href="#">HOME</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link">SERVICES</li>
+                    <li class="navigation__element navigation_link" ><a href="#services">SERVICES</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link">PORTFOLIO</li>
+                    <li class="navigation__element navigation_link"><a href="#portfolio">PORTFOLIO</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link">ABOUT</li>
+                    <li class="navigation__element navigation_link" ><a href="#about">ABOUT</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link navigation_link--last">CONTACT</li>
+                    <li class="navigation__element navigation_link navigation_link--last"><a href="#contact">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="slider-block">
         <div class="wrapper">
-            <input type="image" src="./assets/images/slider/chev.png" class="slider-block__arrow arrow_left">
-            <div class="phone-vertical">
-                <img src="./assets/images/slider/Shadow.png" class="phone__shadow-verticaly">
-                <img src="./assets/images/slider/Cam.png" class="phone__body-verticaly">                    
-                <img src="./assets/images/slider/display-vertical.png" class="phone__picture-verticaly">
+            <input type="image" src="./assets/images/slider/chev.png" class="slider-block__arrow arrow_left" id="slider-arrow-left">
+            <div class="element ">
+                <div class="phone-vertical">
+                    <img src="./assets/images/slider/Shadow.png" class="phone__shadow-verticaly">
+                    <img src="./assets/images/slider/phone-vertical (1).png" class="phone__body-verticaly">                    
+                    <img src="./assets/images/slider/display-vertical.png" class="phone__picture-verticaly">
+                </div>
+                <div class="phone-horizontal">
+                    <img src="./assets/images/slider/Shadow1.png" class="phone__shadow-horizontaly">
+                    <img src="./assets/images/slider/phone-horizontal.png" class="phone__body-horizontaly">                    
+                    <img src="./assets/images/slider/display-horizontly.png" class="phone__picture-horizontaly">
+                </div>
             </div>
-            <div class="phone-horizontal">
-                <img src="./assets/images/slider/Shadow1.png" class="phone__shadow-horizontaly">
-                <img src="./assets/images/slider/Cam1.png" class="phone__body-horizontaly">                    
-                <img src="./assets/images/slider/display-horizontly.png" class="phone__picture-horizontaly">
+            <div class="element active">
+                <div class="el2-vertical-sub">
+                    <img src="./assets/images/slider/slider-content (2).png" class="el2-sub__img--left"> 
+                </div>
+                <div class="el2-vertical">
+                    <img src="./assets/images/slider/slider-content (1).png" class="el2-middle__img"> 
+                </div>
+                <div class="el2-vertical-sub">
+                    <img src="./assets/images/slider/slider-content (2).png" class="el2-sub__img--right"> 
+                </div>
             </div>
-            <input type="image" src="./assets/images/slider/chevR.png" class="slider-block__arrow arrow_right">
+            <input type="image" src="./assets/images/slider/chevR.png" class="slider-block__arrow arrow_right" id="slider-arrow-right">
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="wrapper">
             <p class="services__our">Our Services</p>
             <p class="services__description">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
@@ -94,19 +108,19 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" id="portfolio">
         <div class="wrapper">
             <h2 class="title">Portfolio</h2>
             <p class="description">
                 Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
             </p>
-            <div class="portfolio__buttons">
-                <button class="portfolio__buttons_button button_all">All</button>
+            <div class="portfolio__buttons" id="buttons">
+                <button class="portfolio__buttons_button button_all activeButton">All</button>
                 <button class="portfolio__buttons_button button_web">Web Design</button>
                 <button class="portfolio__buttons_button button_graphic">Graphic Design</button>
                 <button class="portfolio__buttons_button button_artwork">Artwork</button>
             </div>
-            <div class="portfolio__images">
+            <div class="portfolio__images" id="works">
                 <img src="./assets/images/portfolio/portfolio-1.png" class="portfolio__images_image" >
                 <img src="./assets/images/portfolio/portfolio-2.png" class="portfolio__images_image">
                 <img src="./assets/images/portfolio/portfolio-3.png" class="portfolio__images_image">
@@ -122,7 +136,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="wrapper">
             <h2 class="title title__about">About Us</h2>
             <p class="description description__about">
@@ -131,7 +145,7 @@
             <div class="persons">
                 <div class="person-creator">
                     <img src="./assets/images/creators/creator-1.jpg">
-                    <p class="person-creator__name">Adam Jensen</p>
+                    <p class="person-creator__name">Adam Jensen </p>
                     <p class="person-creator__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                    <div class="links">
                         <a><img src="./assets/images/links/Facebook.png" ></a>
@@ -165,7 +179,16 @@
             </div>
         </div>
     </section>
-    <section class="quote">
+    <div class="message-window hidden" id="message-block">
+        <div id="message" class="body-message">
+            <p>Письмо отправлено</p>
+            <p id="information-subject"></p>
+            <p id="information-description"></p>
+            <br>
+            <button id="close-button" class="input-form__submit">Ок</button>
+        </div>
+    </div>
+    <section class="quote" id="contact">
         <div class="wrapper">
             <h2 class="title title--qoute">Get a Quote</h2>
             <p class="description description--quote">
@@ -173,14 +196,14 @@
                     non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
                      Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="quote-basic">
-                <form class="input-form" action="#" method="POST"> 
-                    <input class="input-form__input-text" type="text" name="name" placeholder="Name (Required)" required>
-                    <input class="input-form__input-text" type="email" name="email" placeholder="Email (Required)" required>
-                    <input class="input-form__input-text" type="text" name="subject" placeholder="Subject">
-                    <textarea class="input-form__input-text input-form__input-text--textarea" name="project-description"
+                <form class="input-form" action="#" method="POST" id="form"> 
+                    <input id="name" class="input-form__input-text" type="text" name="name" placeholder="Name (Required)" required>
+                    <input id="mail" class="input-form__input-text" type="email" name="email" placeholder="Email (Required)" required>
+                    <input id="subject" class="input-form__input-text" type="text" name="subject" placeholder="Subject">
+                    <textarea id="description" class="input-form__input-text input-form__input-text--textarea" name="project-description"
                               cols="30" rows="10" placeholder="Describe your project in detail..."
                               style="width: 619px; height: 202px;" action="#"></textarea>
-                    <input class="input-form__submit" type="submit" value="Submit">
+                    <input id="submit" class="input-form__submit" type="SUBMIT" value="Submit"> 
                 </form>
                 <div class="contact-information">
                     <h3 class = "contact-information__title">Contact Information</h3>
@@ -218,5 +241,6 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
