@@ -6,6 +6,8 @@
 
 .header {
     margin: 0;
+    position: fixed;
+    z-index: 5;
     width: 1020px;
     height: 89px;
     background-color: #2d303a;
@@ -83,7 +85,7 @@
 }
 
 .slider-block {
-    display: flex;
+    padding-top: 95px;
     width: 1020px;
     height: 594px;
     background-color: #f06c64;
