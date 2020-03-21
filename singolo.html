@@ -14,20 +14,20 @@
             <a id="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
             <nav>
                 <ul class="navigation">
-                    <li class="navigation__element navigation_link" ><a href="#">HOME</a></li>
+                    <li><a href="#defaultSlider" class="navigation__element navigation_link">HOME</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link" ><a href="#services">SERVICES</a></li>
+                    <li ><a href="#services" class="navigation__element navigation_link">SERVICES</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link"><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#portfolio" class="navigation__element navigation_link">PORTFOLIO</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link" ><a href="#about">ABOUT</a></li>
+                    <li><a href="#about" class="navigation__element navigation_link">ABOUT</a></li>
                     <li class="navigation__element navigation_dot">&middot</li>
-                    <li class="navigation__element navigation_link navigation_link--last"><a href="#contact">CONTACT</a></li>
+                    <li><a href="#contact" class="navigation__element navigation_link navigation_link--last">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="slider-block">
+    <section class="slider-block" id="defaultSlider">
         <div class="wrapper">
             <input type="image" src="./assets/images/slider/chev.png" class="slider-block__arrow arrow_left" id="slider-arrow-left">
             <div class="element ">
@@ -82,8 +82,8 @@
                         <p class="services_text">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     </div>
                 </div>
-            </div>
-            <div class="services-list">
+             <!--</div>-->
+             <!--<div class="services-list">-->
                 <div class="services-component">
                     <span><img src="./assets/images/emblem/phoneR.png" class="services__ico" height="59" width="59"></span>
                     <div class="services__ico-description">
@@ -105,7 +105,7 @@
                         <p class="services_text">Quisque hendrerit purus dapibus, ornare nibh vitae, viverra nibh. Fusce vitae aliquam tellus.</p>
                     </div>
                 </div>
-            </div>
+             </div>
         </div>
     </section>
     <section class="portfolio" id="portfolio">
@@ -121,18 +121,18 @@
                 <button class="portfolio__buttons_button button_artwork">Artwork</button>
             </div>
             <div class="portfolio__images" id="works">
-                <img src="./assets/images/portfolio/portfolio-1.png" class="portfolio__images_image" >
-                <img src="./assets/images/portfolio/portfolio-2.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-3.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-4.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-5.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-6.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-7.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-8.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-9.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-10.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-11.png" class="portfolio__images_image">
-                <img src="./assets/images/portfolio/portfolio-12.png" class="portfolio__images_image"> 
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-1.png" class="portfolio__images_image" ></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-2.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-3.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-4.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-5.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-6.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-7.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-8.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-9.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-10.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-11.png" class="portfolio__images_image"></div>
+                <div class="portfolio__images-block"><img src="./assets/images/portfolio/portfolio-12.png" class="portfolio__images_image"></div>
             </div>
         </div>
     </section>
@@ -144,7 +144,7 @@
             </p>
             <div class="persons">
                 <div class="person-creator">
-                    <img src="./assets/images/creators/creator-1.jpg">
+                    <div class="person-creator__img-block"><img src="./assets/images/creators/creator-1.jpg"></div>
                     <p class="person-creator__name">Adam Jensen </p>
                     <p class="person-creator__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                    <div class="links">
@@ -155,7 +155,7 @@
                     </div>
                 </div>
                 <div class="person-creator">
-                    <img src="./assets/images/creators/creator-2.jpg">
+                    <div class="person-creator__img-block"><img src="./assets/images/creators/creator-2.jpg"></div>
                     <p class="person-creator__name">Desmond Miles</p>
                     <p class="person-creator__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                     <div class="links">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="person-creator">
-                    <img src="./assets/images/creators/creator-3.jpg">
+                    <div class="person-creator__img-block"><img src="./assets/images/creators/creator-3.jpg"></div>
                     <p class="person-creator__name">Scolara Visari</p>
                     <p class="person-creator__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                     <div class="links">
@@ -202,7 +202,7 @@
                     <input id="subject" class="input-form__input-text" type="text" name="subject" placeholder="Subject">
                     <textarea id="description" class="input-form__input-text input-form__input-text--textarea" name="project-description"
                               cols="30" rows="10" placeholder="Describe your project in detail..."
-                              style="width: 619px; height: 202px;" action="#"></textarea>
+                            action="#"></textarea>
                     <input id="submit" class="input-form__submit" type="SUBMIT" value="Submit"> 
                 </form>
                 <div class="contact-information">

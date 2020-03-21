@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 .header {
@@ -47,14 +48,18 @@
 }
 
 .navigation {
+    list-style-type: none;
     padding: 0;
     width: 380px;
     height: 9px;
 }
 
-.navigation .navigation__element {
+.navigation li {
     display: inline;
-    margin: 0 8px 0 0;
+}
+
+.navigation__element {
+    margin-right: 8px;
     font-family: 'Lato', Arial, sans-serif;
     line-height: 6px;
     font-size: 12px;
@@ -62,22 +67,22 @@
     letter-spacing: -0.02em;
 }
 
-.navigation a {
+.navigation_link{
     color: #fff;
     text-decoration: none;
+}
+
+.active-link {
+    color: #f06c64;
 }
 
 .navigation .navigation_link--last {
     margin-right: 0;
 }
 
-.navigation_link a:hover{
+.navigation_link:hover{
     color: #f06c64;
     cursor: pointer;
-}
-
-.navigation_link a:active{
-    color: #f06c64;
 }
 
 .navigation_dot {
@@ -271,8 +276,8 @@
 
 .services__description {
     font-family: 'Lato', Arial, sans-serif;
-    margin: 18px 0 58px 0;
-    height: 47px;
+    margin: 18px 0 46px 0;
+    /*height: 47px;*/
     font-size: 18px;
     font-weight: 300;
     line-height: 30px;
@@ -282,17 +287,23 @@
 }
 
 .services-list {
-    display: inline-flex;
-    flex-direction: row;
-    margin-bottom: 1px;
-    height: 122px;
-    width: 940px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 960px;
+    margin-left: 2px;
 }
 
 .services-component {
     display: flex;
-    margin-right: 21px;
+    margin-right: 20px;
     width: 300px;
+    height: 123px;
+}
+
+.services-component::before {
+    content: "";
+    float: left;
+    padding-top: 100%;
 }
 
 .services__ico {
@@ -402,13 +413,25 @@
 }
 
 .portfolio__images {
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
     width: 960px;
     max-height: 604px;
 }
 
+.portfolio__images-block {
+    display: flex;
+    width: 220px;
+    height: 187px;
+    margin: 10px 20px 10px 0;
+}
+
 .portfolio__images_image {
-   margin: 10px 16px 6px 0;
+    /*display: flexbox;
+    margin: 10px 16px 6px 0;*/
+    width: 100%;
+    height: 100%;
+
 }
 
 .portfolio__images_image:not(.img_active):hover{
@@ -439,8 +462,7 @@
 }
 
 .description__about {
-    margin: 0 1px 47px 0;
-    height: 57px;
+    margin: 0 1px 45px 0;
     text-align: justify;
     line-height: 30px;
     letter-spacing: -0.035em;
@@ -448,17 +470,31 @@
 
 .persons {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.person-creator:last-child {
+    margin-right: 0;
 }
 
 .person-creator{
     margin-right: 20px;
-    margin-left: 0px;
     width: 300px;
     height: 443px;
 }
 
+.person-creator__img-block {
+    width: 300px;
+    height: 300px;
+}
+
+.person-creator__img-block img {
+    width: 100%;
+    height: 100%;
+}
+
 .person-creator__name {
-    margin: 14px 0 10px -1px;
+    margin: 19px 0 10px -1px;
     font-family: "Lato", sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -505,9 +541,8 @@
 }
 
 .description--quote {
-    margin: 0 -1px 46px 0;
+    margin: 0 -1px 44px 0;
     text-align: justify;
-    height: 57px;
     font-size: 18px;
     line-height: 30px;
     letter-spacing: -0.03em;
@@ -542,8 +577,8 @@
     border-radius: 5px;
     box-sizing: border-box;
     outline: none;
-    max-width: 100%;
-    min-width: 100%;
+    /*max-width: 100%;
+    min-width: 100%;*/
 }
 
 .input-form__input-text::placeholder{
@@ -559,6 +594,8 @@
 }
 
 .input-form__input-text--textarea {
+    width: 619px;
+     height: 202px;
     padding-top: 12px;
     margin-bottom: 14px;
     resize: none;
@@ -683,4 +720,98 @@
 
 .links .links--last {
     margin-right: -1px;
+}
+
+@media (max-width: 768px){
+
+    .wrapper {
+        width: 688px;
+    }
+
+    .logo h1 {
+        width: 310px;
+    }
+
+    .header {
+        width: 768px;
+    }
+
+    .slider-block {
+        width: 768px;
+        height: 447.25px;
+    }
+
+    .services {
+        width: 768px;
+        height: 675px
+    }
+
+    .services__our {
+        padding-top: 39px;
+    }
+
+    .services__description {
+        margin-bottom: 44px;
+    }
+
+    .services-list {
+        width: 710px;
+    }   
+
+    .services-component {
+        margin-right: 53px;
+    }
+
+    .portfolio {
+        width: 768px;
+        height: 1094px;
+    }
+
+    .portfolio__images {
+        width: 720px;
+    }
+
+    .portfolio__images-block {
+        width: 216.19px;
+        height: 183.76px;
+    }
+
+    .about {
+        width: 768px;
+    }
+
+    .person-creator {
+        margin-right: 14px;
+        width: 219px;
+        height: 360px;
+    }
+
+    .person-creator__img-block {
+        width: 218.94px;
+        height: 218.94px;
+    }
+
+    .quote {
+        width: 768px;
+    }
+
+    .description--quote {
+        margin-bottom: 32px;
+    }
+
+    .input-form__input-text {
+        width: 442px;
+    }
+
+    .input-form__input-text .input-form__input-text--textarea {
+        width: 442px;
+    }
+
+    .singolo-footer {
+        width: 768px;
+    }
+
+    .singolo-footer__text {
+        margin-right: 310px;
+    }
 }

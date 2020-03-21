@@ -4,8 +4,26 @@ const WORKS = document.getElementById('works'); //Porfolio Works
 const SUBMIT = document.getElementById('submit');// Form Submit Button
 const CLOSE_MESSAGE = document.getElementById('close-button'); // Messege about succesful sent
 const SLIDS = document.querySelectorAll('.element'); //Slids
+const NAVIGATION = document.querySelectorAll('.navigation_link');
 let verticalDisplay = document.querySelector('.phone__picture-verticaly');
 let horizontalDisplay = document.querySelector('.phone__picture-horizontaly');
+
+//NAVIGATION
+
+ document.addEventListener('scroll', function(event) {
+    const curPos = window.scrollY;
+    document.querySelectorAll('section').forEach((el) => {
+        if(el.offsetTop <= curPos && el.offsetTop + el.offsetHeight > curPos){
+            NAVIGATION.forEach((a) => {
+                a.classList.remove('active-link');
+                if(el.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active-link');
+                }
+            });
+        }
+
+    });
+ });
 
 //SLIDER
 let activeSlide = 1;
