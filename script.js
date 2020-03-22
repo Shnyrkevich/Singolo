@@ -25,6 +25,15 @@ let horizontalDisplay = document.querySelector('.phone__picture-horizontaly');
     });
  });
 
+let burgerMain =  document.querySelector('.header-burger-main');
+let burgerWindow = document.querySelector('.header-burger-shadow');
+
+document.querySelector('.header-burger__burger').addEventListener('click', () => {
+    burgerMain.style.display = 'none';
+    burgerWindow.classList.add('burger-menu-window-active');
+
+ });
+
 //SLIDER
 let activeSlide = 1;
 
