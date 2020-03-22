@@ -11,20 +11,35 @@
 <body>
     <header class="header">
         <div class="wrapper">
-            <a id="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
-            <nav>
-                <ul class="navigation">
-                    <li><a href="#defaultSlider" class="navigation__element navigation_link">HOME</a></li>
-                    <li class="navigation__element navigation_dot">&middot</li>
-                    <li ><a href="#services" class="navigation__element navigation_link">SERVICES</a></li>
-                    <li class="navigation__element navigation_dot">&middot</li>
-                    <li><a href="#portfolio" class="navigation__element navigation_link">PORTFOLIO</a></li>
-                    <li class="navigation__element navigation_dot">&middot</li>
-                    <li><a href="#about" class="navigation__element navigation_link">ABOUT</a></li>
-                    <li class="navigation__element navigation_dot">&middot</li>
-                    <li><a href="#contact" class="navigation__element navigation_link navigation_link--last">CONTACT</a></li>
-                </ul>
-            </nav>
+            <div class="header-normal">
+                <a id="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
+                <nav>
+                    <ul class="navigation">
+                        <li><a href="#defaultSlider" class="navigation__element navigation_link">HOME</a></li>
+                        <li class="navigation__element navigation_dot">&middot</li>
+                        <li ><a href="#services" class="navigation__element navigation_link">SERVICES</a></li>
+                        <li class="navigation__element navigation_dot">&middot</li>
+                        <li><a href="#portfolio" class="navigation__element navigation_link">PORTFOLIO</a></li>
+                        <li class="navigation__element navigation_dot">&middot</li>
+                        <li><a href="#about" class="navigation__element navigation_link">ABOUT</a></li>
+                        <li class="navigation__element navigation_dot">&middot</li>
+                        <li><a href="#contact" class="navigation__element navigation_link navigation_link--last">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-burger">
+                <button class="header-burger__burger"></button>
+                <a id="#" class="logo" href=".singolo.html"><h1>SINGOLO<span>*</span></h1></a>
+                <nav class="navigation">
+                    <ul class="navigation navigation-burger">
+                        <li><a href="#defaultSlider" class="navigation__element navigation_link">HOME</a></li>
+                        <li ><a href="#services" class="navigation__element navigation_link">SERVICES</a></li>
+                        <li><a href="#portfolio" class="navigation__element navigation_link">PORTFOLIO</a></li>
+                        <li><a href="#about" class="navigation__element navigation_link">ABOUT</a></li>
+                        <li><a href="#contact" class="navigation__element navigation_link navigation_link--last">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <section class="slider-block" id="defaultSlider">
@@ -32,24 +47,28 @@
             <input type="image" src="./assets/images/slider/chev.png" class="slider-block__arrow arrow_left" id="slider-arrow-left">
             <div class="element ">
                 <div class="phone-vertical">
-                    <img src="./assets/images/slider/Shadow.png" class="phone__shadow-verticaly">
+                    <!--<img src="./assets/images/slider/Shadow.png" class="phone__shadow-verticaly">
                     <img src="./assets/images/slider/phone-vertical (1).png" class="phone__body-verticaly">                    
-                    <img src="./assets/images/slider/display-vertical.png" class="phone__picture-verticaly">
+                    <img src="./assets/images/slider/display-vertical.png" class="phone__picture-verticaly">-->
+                    <div class="phone-vertical__body-v"><img src="./assets/images/slider/slider_for/phone-vertical (3).png"></div>
+                    <div class="phone-vertical__display-v"><img src="./assets/images/slider/slider_for/phone-vertical-display (1).png"></div>  
                 </div>
                 <div class="phone-horizontal">
-                    <img src="./assets/images/slider/Shadow1.png" class="phone__shadow-horizontaly">
+                    <!--<img src="./assets/images/slider/Shadow1.png" class="phone__shadow-horizontaly">
                     <img src="./assets/images/slider/phone-horizontal.png" class="phone__body-horizontaly">                    
-                    <img src="./assets/images/slider/display-horizontly.png" class="phone__picture-horizontaly">
+                    <img src="./assets/images/slider/display-horizontly.png" class="phone__picture-horizontaly">-->
+                    <div class="phone-horizontal__body-h"><img src="./assets/images/slider/slider_for/phone-horizontal (2).png"></div>
+                    <div class="phone-horizontal__display-h"><img src="./assets/images/slider/slider_for/phone-horizontal-display (1).png"></div>  
                 </div>
             </div>
             <div class="element active">
-                <div class="el2-vertical-sub">
+                <div class="el2-vertical-sub--left">
                     <img src="./assets/images/slider/slider-content (2).png" class="el2-sub__img--left"> 
                 </div>
                 <div class="el2-vertical">
                     <img src="./assets/images/slider/slider-content (1).png" class="el2-middle__img"> 
                 </div>
-                <div class="el2-vertical-sub">
+                <div class="el2-vertical-sub--right">
                     <img src="./assets/images/slider/slider-content (2).png" class="el2-sub__img--right"> 
                 </div>
             </div>
