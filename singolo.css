@@ -5,7 +5,7 @@
     scroll-behavior: smooth;
 }
 
-.body {
+html {
     overflow-x: hidden;
 }
 
@@ -1015,6 +1015,10 @@
 }
 
 @media (max-width: 375px){
+
+    body {
+        overflow-x: hidden;
+    }
 
     .wrapper {
         margin: 0 30.5px 0 30.5px;
