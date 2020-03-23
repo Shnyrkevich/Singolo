@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+.body {
+    overflow-x: hidden;
+}
+
 .header {
     margin: 0;
     position: fixed;
