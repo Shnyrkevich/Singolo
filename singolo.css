@@ -251,6 +251,7 @@
     width: 240px;
     height: 483px;
     z-index: 1;
+    cursor: pointer;
 }
 
 
@@ -260,6 +261,7 @@
     width: 188px;
     height: 333px;
     z-index: 2;
+    cursor: pointer;
 }
 
 /*.phone__shadow-verticaly{    //phones throw 3 pictures in one div with z-index
@@ -304,6 +306,7 @@
     width: 483px;
     height: 240px;
     z-index: 1;
+    cursor: pointer;
 }
 
 .phone-horizontal__display-h {
@@ -312,6 +315,7 @@
     width: 333px;
     height: 188px;
     z-index: 2;
+    cursor: pointer;
 }
 
 /*.phone__shadow-horizontaly{
@@ -564,8 +568,6 @@
 }
 
 .img_active {
-    width: 210px;
-    height: 182px;
     border: 5px solid #F06C64;
 }
 
@@ -1237,7 +1239,15 @@
     }
 
     .input-form__submit {
-        width: 314px;
+        width: 100%;
+    }
+
+    .body-message {
+        width: 250px;
+    }
+
+    .body-message .input-form__submit {
+        width: 50%;
     }
 
     .singolo-footer {

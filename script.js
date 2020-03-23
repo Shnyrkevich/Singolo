@@ -1,12 +1,13 @@
 
 const BUTTONS = document.getElementById('buttons'); //Portfolio Buttons
-const WORKS = document.getElementById('works'); //Porfolio Works
+const WORKS = document.getElementById('works');
 const SUBMIT = document.getElementById('submit');// Form Submit Button
 const CLOSE_MESSAGE = document.getElementById('close-button'); // Messege about succesful sent
 const SLIDS = document.querySelectorAll('.element'); //Slids
 const NAVIGATION = document.querySelectorAll('.navigation_link');
-let verticalDisplay = document.querySelector('.phone__picture-verticaly');
-let horizontalDisplay = document.querySelector('.phone__picture-horizontaly');
+let verticalDisplay = document.querySelector('.phone-vertical__display-v');
+let horizontalDisplay = document.querySelector('.phone-horizontal__display-h');
+let images = document.querySelectorAll('.portfolio__images-block');
 
 //NAVIGATION
 
@@ -122,13 +123,13 @@ horizontalDisplay.addEventListener('click', () => {
 
 });
 
-document.querySelector('.phone__body-verticaly').addEventListener('click', () => {
+document.querySelector('.phone-vertical__body-v').addEventListener('click', () => {
     if(verticalDisplay.classList.contains('active')){
         verticalDisplay.classList.remove('active');
     }
 });
 
-document.querySelector('.phone__body-horizontaly').addEventListener('click', () => {
+document.querySelector('.phone-horizontal__body-h').addEventListener('click', () => {
     if(horizontalDisplay.classList.contains('active')){
         horizontalDisplay.classList.remove('active');
     }
@@ -140,32 +141,43 @@ function getRandomInt(){
 }
 
 BUTTONS.addEventListener('click', (event) => {
-    BUTTONS.querySelectorAll('button').forEach(el => el.classList.remove('activeButton'));
-    event.target.classList.add('activeButton');
 
-    let images = document.querySelectorAll('.portfolio__images_image');
     let galery = document.querySelector('.portfolio__images');
     let mas = [];
     let i = 0;
 
-    images.forEach(el => {
-        mas[i] = el;
-        i++;
-    });
+    if(event.target == BUTTONS) {
+        event.target.classList.remove('activeButton');
+    } else {
+        BUTTONS.querySelectorAll('button').forEach(el => el.classList.remove('activeButton'));
+        event.target.classList.add('activeButton');
 
-    for(let i = 0; i < mas.length; i++){ // Нерабочая сортировка элементов блока WORKS
-        let randIndex = getRandomInt();
-        let temp = mas[i];
-        mas[i] = mas[randIndex];
-        mas[randIndex] = temp;
-        }
-
-    mas.forEach(el => galery.append(el));
+        images.forEach(el => {
+            mas[i] = el;
+            i++;
+        });
+    
+        for(let i = 0; i < mas.length; i++){ // Нерабочая сортировка элементов блока WORKS
+            let randIndex = getRandomInt();
+            let temp = mas[i];
+            mas[i] = mas[randIndex];
+            mas[randIndex] = temp;
+            }
+    
+        mas.forEach(el => galery.append(el));
+    }
+   
 });
 
 WORKS.addEventListener('click', (event) => {
-    WORKS.querySelectorAll('img').forEach(el => el.classList.remove('img_active'));
-    event.target.classList.add('img_active');
+    if(event.target == WORKS){
+        WORKS.querySelectorAll('img').forEach((el) => el.classList.remove('img_active'));
+        event.target.classList.remove('img_active');
+    } else {
+        WORKS.querySelectorAll('img').forEach((el) => el.classList.remove('img_active'));
+        event.target.classList.add('img_active');
+    }
+    
 });
 
 //FORMS
