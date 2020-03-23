@@ -132,6 +132,10 @@
     transform: translateX(0%);
 }
 
+.header-burger__burger_active {
+    transform: rotate(90deg);
+}
+
 .header-burger-container {
     display: flex;
     margin-bottom: 134px;
