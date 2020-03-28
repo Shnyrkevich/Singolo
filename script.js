@@ -191,31 +191,34 @@ WORKS.addEventListener('click', (event) => {
 });
 
 //FORMS
-SUBMIT.addEventListener('click', () => {
+SUBMIT.addEventListener('click', (event) => {
 
     const subjectText = document.getElementById('subject').value.toString();
     const descriptionText = document.getElementById('description').value.toString();
-
-    document.getElementById('message-block').classList.remove('hidden');
-
+    let requiredInputs = [...document.querySelectorAll("[required]")];
+    let validStatus = el => el.checkValidity();
+    
+    if(requiredInputs.every(validStatus)){
+        event.preventDefault();
+        document.getElementById('message-block').classList.remove('hidden');
 
     if(subjectText.length == 0){
         document.getElementById('information-subject').innerText = "Без темы  ";
     } else {
         document.getElementById('information-subject').innerText = "Тема:  " + subjectText;
     }
-
     if(descriptionText.length == 0){
         document.getElementById('information-description').innerText = "Без описания";
     } else {
         document.getElementById('information-description').innerText = "Описание:  " + descriptionText;
     }
 
-
     document.getElementById('name').value = "";
     document.getElementById('mail').value = "";
     document.getElementById('subject').value = "";
     document.getElementById('description').value = "";
+    }
+    
 });
 
 CLOSE_MESSAGE.addEventListener('click', () => {

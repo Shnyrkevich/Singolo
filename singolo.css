@@ -186,42 +186,6 @@ html {
     animation: 0.5s ease-in-out;
 }
 
-/*.to-left {
-    animation-name: left;
-}
-
-.to-right {
-    animation-name: right;
-    animation-direction: reverse;
-}
-
-.from-left {
-    animation-name: left;
-    animation-direction: reverse;
-}
-
-.from-right {
-    animation-name: right;
-}
-
-@keyframes left {
-    from {
-        left: 0;
-    } 
-    to {
-        left: -100%;
-    }
-}
-
-@keyframes right {
-    from {
-        left: 100%;
-    } 
-    to {
-        left: 0;
-    }
-}*/
-
 .slider-block__arrow {
     display: inline-flex;
     outline: none;
@@ -725,6 +689,14 @@ html {
 
 .input-form__input-text:focus{
     background-color: #fff;
+}
+
+.validka:valid {
+    border: 2px solid black;
+}
+
+.validka:invalid{
+    border: 2px solid red;
 }
 
 .input-form__input-text--textarea {
