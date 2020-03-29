@@ -5,12 +5,15 @@ const SUBMIT = document.getElementById('submit');// Form Submit Button
 const CLOSE_MESSAGE = document.getElementById('close-button'); // Messege about succesful sent
 const SLIDS = document.querySelectorAll('.element'); //Slids
 const NAVIGATION = document.querySelectorAll('.navigation_link');
-let verticalDisplay = document.querySelector('.phone-vertical__display-v');
-let horizontalDisplay = document.querySelector('.phone-horizontal__display-h');
-let images = document.querySelectorAll('.portfolio__images-block');
+let verticalDisplay = document.querySelector('.phone-vertical__display-v');//Vertical display (Slide1)
+let horizontalDisplay = document.querySelector('.phone-horizontal__display-h');//Horizontal display (Slide1)
+let images = document.querySelectorAll('.portfolio__images-block');//Massive with works un portfolio
+let burgerMain =  document.querySelector('.header-burger-main');//Burger Menu
+let burgerWindow = document.querySelector('.header-burger-shadow');//Window shadow
+
+console.log("Не реализовано:\n1.Анимация перелистывания слайда\n2.При 320px съезжает макет");
 
 //NAVIGATION
-
  document.addEventListener('scroll', function(event) {
     const curPos = window.scrollY;
     document.querySelectorAll('section').forEach((el) => {
@@ -25,9 +28,6 @@ let images = document.querySelectorAll('.portfolio__images-block');
 
     });
  });
-
-let burgerMain =  document.querySelector('.header-burger-main');
-let burgerWindow = document.querySelector('.header-burger-shadow');
 
 document.querySelector('.header-burger__burger').addEventListener('click', () => {
     document.querySelectorAll('.header-burger__burger').forEach((el) => {
@@ -45,7 +45,7 @@ document.querySelector('.header-burger-window .header-burger__burger').addEventL
     burgerWindow.classList.remove('burger-menu-window-active');
 });
 
-//SLIDER
+//SLIDER Так как делал слайды на элементах реализация анимации не получалась, можно было сделать перекат через transform
 let activeSlide = 1;
 
 showSlides(activeSlide); //Костыль
@@ -167,7 +167,7 @@ BUTTONS.addEventListener('click', (event) => {
             i++;
         });
     
-        for(let i = 0; i < mas.length; i++){ // Нерабочая сортировка элементов блока WORKS
+        for(let i = 0; i < mas.length; i++){
             let randIndex = getRandomInt();
             let temp = mas[i];
             mas[i] = mas[randIndex];
